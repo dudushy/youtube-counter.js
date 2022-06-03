@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="popup.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <button id="changeColor"></button>
     <script src="popup.js"></script>
-  </body>
+
+    <!-- <div class="counter">
+        <h2>url</h2>
+        <h1>number</h1>
+    </div> -->
+
+    <!--!  [comeco] nao está funcionando -->
+    <script>
+        const videoUrl = document.getElementById("videoUrl");
+        const videoNumber = document.getElementById("videoNumber");
+
+        console.log(videoUrl.innerHTML);
+        console.log(videoNumber.innerHTML);
+
+        videoNumber.innerHTML = 2;
+    </script>
+    <!--!  [fim] nao está funcionando -->
+    <table class="counter">
+        <tr>
+            <td>
+                <h2 id="videoUrl">url</h2>
+            </td>
+            <td>
+                <h1 id="videoNumber">number</h1>
+            </td>
+        </tr>
+    </table>
+</body>
+
 </html>
